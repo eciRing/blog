@@ -26,14 +26,14 @@
 <meta name="twitter:title" content="白蘩&#x2F;eciRing&#39;s blog">
 <meta name="twitter:description" content="坐标uestc,小透明，学习中">
 
-<link rel="apple-touch-icon" href= "/apple-touch-icon.png">
+<link rel="apple-touch-icon" href= "/blog//apple-touch-icon.png">
 
 
     <link rel="alternate" href="/atom.xml" title="白蘩/eciRing&#39;s blog" type="application/atom+xml">
 
 
 
-    <link rel="shortcut icon" href="source/favicon.gif">
+    <link rel="shortcut icon" href="/blog/source/favicon.gif">
 
 
 
@@ -72,7 +72,7 @@
         isCategory: false,
         fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
         scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
-        search: 
+        search: true
     }
 </script>
 
@@ -81,7 +81,7 @@
 
 
 
-    <script> yiliaConfig.rootUrl = "\/";</script>
+    <script> yiliaConfig.rootUrl = /blog/; </script>
 
 
 
@@ -96,16 +96,23 @@
 <div class="intrude-less">
     <header id="header" class="inner">
         <a href="/blog/" class="profilepic">
-            <img src="source/img/avatar.png" class="animated zoomIn">
+            <img src="/blog/source/img/avatar.png" class="animated zoomIn">
         </a>
         <hgroup>
           <h1 class="header-author"><a href="/blog/">eciRing</a></h1>
         </hgroup>
 
         
-        <p class="header-subtitle">突然好奇前端，向安全方向努力!</p>
+        <p class="header-subtitle">好奇前端，向安全方向努力!</p>
         
 
+        
+            <form id="search-form">
+            <input type="text" id="local-search-input" name="q" placeholder="search..." class="search form-control" autocomplete="off" autocorrect="off" searchonload="true" />
+            <i class="fa fa-times" onclick="resetSearch()"></i>
+            </form>
+            <div id="local-search-result"></div>
+            <p class='no-result'>No results found <i class='fa fa-spinner fa-pulse'></i></p>
         
 
 
@@ -157,13 +164,13 @@
                     <nav class="header-menu">
                         <ul>
                         
-                            <li><a href="/blog/">主页</a></li>
+                            <li><a href="/blog//blog/">主页</a></li>
                         
-                            <li><a href="/blog/archives/">所有文章</a></li>
+                            <li><a href="/blog//blog/archives/">所有文章</a></li>
                         
-                            <li><a href="/blog/tags/">标签云</a></li>
+                            <li><a href="/blog//blog/tags/">标签云</a></li>
                         
-                            <li><a href="/blog/about/">关于我</a></li>
+                            <li><a href="/blog//blog/about/">关于我</a></li>
                         
                         </ul>
                     </nav>
@@ -217,13 +224,13 @@
     <div class="intrude-less">
         <header id="header" class="inner">
             <a href="/blog/" class="profilepic">
-                <img src="source/img/avatar.png" class="animated zoomIn">
+                <img src="/blog/source/img/avatar.png" class="animated zoomIn">
             </a>
             <hgroup>
               <h1 class="header-author"><a href="/blog/" title="回到主页">eciRing</a></h1>
             </hgroup>
             
-            <p class="header-subtitle">突然好奇前端，向安全方向努力!</p>
+            <p class="header-subtitle">好奇前端，向安全方向努力!</p>
             
             <nav class="header-menu">
                 <ul>
@@ -414,7 +421,7 @@
             }
             else {
                 var backgroundnum = 5;
-                var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+                var backgroundimg = "url(/blog//background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
                 $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
             }
         })
