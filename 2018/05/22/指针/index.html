@@ -28,17 +28,17 @@
 
 
 
-<meta name="description" content="芙蓉花腮柳叶眼。 十一把镜学点妆， 十二抽针能绣裳。 十三行坐事调品， 不肯迷头白地藏。">
+<meta name="description" content="目录 概念  指针基础  指针常量及引用  指针与数组  指针与字符串  结构体指针  函数指针  读取   1.概念   如同变量储存值，指针对数据及函数的地址进行操作。    int x=10;    int* ptr =&amp;amp;x    简述内存与地址    内存：一组以二进制方式储存信息的单元，在空间中呈线性序列排序。    内存地址：用于访问（数据）基本信息单元的数字。 2.指针基础">
 <meta property="og:type" content="article">
-<meta property="og:title" content="看不透">
-<meta property="og:url" content="https://eciRing.github.io/blog/2018/03/03/看不透/index.html">
+<meta property="og:title" content="白蘩&#x2F;eciRing&#39;s blog">
+<meta property="og:url" content="https://eciRing.github.io/blog/2018/05/22/指针/index.html">
 <meta property="og:site_name" content="白蘩&#x2F;eciRing&#39;s blog">
-<meta property="og:description" content="芙蓉花腮柳叶眼。 十一把镜学点妆， 十二抽针能绣裳。 十三行坐事调品， 不肯迷头白地藏。">
+<meta property="og:description" content="目录 概念  指针基础  指针常量及引用  指针与数组  指针与字符串  结构体指针  函数指针  读取   1.概念   如同变量储存值，指针对数据及函数的地址进行操作。    int x=10;    int* ptr =&amp;amp;x    简述内存与地址    内存：一组以二进制方式储存信息的单元，在空间中呈线性序列排序。    内存地址：用于访问（数据）基本信息单元的数字。 2.指针基础">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-10T12:20:39.316Z">
+<meta property="og:updated_time" content="2018-05-21T18:36:46.214Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="看不透">
-<meta name="twitter:description" content="芙蓉花腮柳叶眼。 十一把镜学点妆， 十二抽针能绣裳。 十三行坐事调品， 不肯迷头白地藏。">
+<meta name="twitter:title" content="白蘩&#x2F;eciRing&#39;s blog">
+<meta name="twitter:description" content="目录 概念  指针基础  指针常量及引用  指针与数组  指针与字符串  结构体指针  函数指针  读取   1.概念   如同变量储存值，指针对数据及函数的地址进行操作。    int x=10;    int* ptr =&amp;amp;x    简述内存与地址    内存：一组以二进制方式储存信息的单元，在空间中呈线性序列排序。    内存地址：用于访问（数据）基本信息单元的数字。 2.指针基础">
 
 
 
@@ -102,7 +102,7 @@
 
 
 
-<title>看不透 | 白蘩/eciRing&#39;s blog</title>
+<title>白蘩/eciRing&#39;s blog</title>
 
 
 
@@ -365,11 +365,11 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap"><article id="post-看不透" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-指针" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/blog/2018/03/03/看不透/" class="article-date">
-      <time datetime="2018-03-03T13:12:32.076Z" itemprop="datePublished">2018-03-03</time>
+      <a href="/blog/2018/05/22/指针/" class="article-date">
+      <time datetime="2018-05-21T18:15:01.821Z" itemprop="datePublished">2018-05-22</time>
 </a>
 
 
@@ -380,32 +380,55 @@
       <input type="hidden" class="isFancy" />
     
     
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      看不透
-    </h1>
-  
-
-      </header>
-      
-      <div class="article-info article-info-post">
-        
-
-        
-        <div class="clearfix"></div>
-      </div>
-      
-    
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>芙蓉花腮柳叶眼。</p>
-<p>十一把镜学点妆，</p>
-<p>十二抽针能绣裳。</p>
-<p>十三行坐事调品，</p>
-<p>不肯迷头白地藏。</p>
+        <h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><ol>
+<li><p>概念</p>
+</li>
+<li><p>指针基础</p>
+</li>
+<li><p>指针常量及引用</p>
+</li>
+<li><p>指针与数组</p>
+</li>
+<li><p>指针与字符串</p>
+</li>
+<li><p>结构体指针</p>
+</li>
+<li><p>函数指针</p>
+</li>
+<li><p>读取</p>
+</li>
+</ol>
+<h1 id="1-概念"><a href="#1-概念" class="headerlink" title="1.概念"></a>1.概念</h1><p>   如同变量储存值，指针对数据及函数的地址进行操作。</p>
+<p>   <code>int x=10;</code>    <code>int* ptr =&amp;x</code></p>
+<p>   简述内存与地址</p>
+<p>   内存：一组以二进制方式储存信息的单元，在空间中呈线性序列排序。</p>
+<p>   内存地址：用于访问（数据）基本信息单元的数字。</p>
+<h2 id="2-指针基础"><a href="#2-指针基础" class="headerlink" title="2.指针基础"></a>2.指针基础</h2><p>   指针同一般变量一样，既能储存值，也占据内存空间，作为特殊变量用于存储or访问内存地址。</p>
+<p>   <code>&amp;</code> 取址操作符</p>
+<p>   返回操作对象的内存地址</p>
+<p>   声明指针变量一般形式 ：<code>数据类型*   变量名 例： int* x</code>   </p>
+<p>   <code>*</code> 解引用操作符</p>
+<p>   使编译器识别它是一个指针变量，可以用来得到内存单元的值。</p>
+<p>   解引用指针变量前，指针变量必须指向一个有效地址。</p>
+<p>   例：int* x=10是错的。 10不在内存中</p>
+<p>   <code>%p</code> 打印地址</p>
+<p>   <code>printf(&quot;%p&quot;,ptr);</code>使用变量ptr打印x的地址</p>
+<p>   指针赋值</p>
+<p>   1.使用&amp;</p>
+<p>   <code>int x =10;</code></p>
+<p>   <code>int* ptr =&amp;x;</code></p>
+<p>   <code>or  int* ptr ;</code></p>
+<p>   <code>ptr=&amp;x;</code></p>
+<p>   2.堆的动态分配</p>
+<p>   ​    <code>int* ptr;</code></p>
+<p>   ​    <code>ptr=(int*)malloc(sizeof(int));</code></p>
+<h3 id="3-指针常量及其引用"><a href="#3-指针常量及其引用" class="headerlink" title="3.指针常量及其引用"></a>3.指针常量及其引用</h3><p>   常量指针声明  <code>指针类型*  const  变量名</code></p>
+<p>   ​                       <code>int*  const x;</code></p>
+<p>``内存地址只能指向一个，且不能改变其值</p>
+<p>。。。。。。。。。。。。困死了睡觉</p>
 
       
     </div>
@@ -414,13 +437,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/blog/2018/03/03/看不透/">看不透</a></p>
+        <p><span>本文标题:</span><a href="/blog/2018/05/22/指针/"></a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">eciRing</a></p>
-        <p><span>发布时间:</span>2018-03-03, 21:12:32</p>
-        <p><span>最后更新:</span>2018-03-10, 20:20:39</p>
+        <p><span>发布时间:</span>2018-05-22, 02:15:01</p>
+        <p><span>最后更新:</span>2018-05-22, 02:36:46</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/blog/2018/03/03/看不透/" title="看不透">https://eciRing.github.io/blog/2018/03/03/看不透/</a>
-            <span class="copy-path" data-clipboard-text="原文: https://eciRing.github.io/blog/2018/03/03/看不透/　　作者: eciRing" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/blog/2018/05/22/指针/" title="">https://eciRing.github.io/blog/2018/05/22/指针/</a>
+            <span class="copy-path" data-clipboard-text="原文: https://eciRing.github.io/blog/2018/05/22/指针/　　作者: eciRing" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
@@ -432,16 +455,10 @@
 
     <nav id="article-nav">
         
-            <div id="article-nav-newer" class="article-nav-title">
-                <a href="/blog/2018/03/03/emmmmm/">
-                    browser sync这么过分一定发blog
-                </a>
-            </div>
-        
         
             <div id="article-nav-older" class="article-nav-title">
-                <a href="/blog/2018/01/30/完善blog持续进行中/">
-                    菜鸡开始完善blog
+                <a href="/blog/2018/03/06/通知/">
+                    
                 </a>
             </div>
         
@@ -453,7 +470,7 @@
     <div id="toc" class="toc-article">
         <strong class="toc-title">文章目录</strong>
         
-            
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#目录"><span class="toc-number">1.</span> <span class="toc-text">目录</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#1-概念"><span class="toc-number"></span> <span class="toc-text">1.概念</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#2-指针基础"><span class="toc-number">1.</span> <span class="toc-text">2.指针基础</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-指针常量及其引用"><span class="toc-number">1.1.</span> <span class="toc-text">3.指针常量及其引用</span></a></li></ol></li></ol>
         
     </div>
     <style>
@@ -487,7 +504,7 @@
         </div>
         <script>
             window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"看不透　| 白蘩/eciRing's blog　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+                "common":{"bdSnsKey":{},"bdText":"　| 白蘩/eciRing's blog　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
         </script>
     
 
@@ -551,15 +568,13 @@ gitment.render('git')
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/blog/2018/03/03/emmmmm/" title="上一篇: browser sync这么过分一定发blog">
-                <i class="fa fa-angle-left"></i>
-            </a>
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
 
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/blog/2018/01/30/完善blog持续进行中/" title="下一篇: 菜鸡开始完善blog">
+            <a href="/blog/2018/03/06/通知/" title="下一篇: ">
                 <i class="fa fa-angle-right"></i>
             </a>
         
