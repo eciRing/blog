@@ -2,13 +2,8 @@
 <search>
   <entry>
     <title></title>
-    <url>%2Fblog%2F2018%2F05%2F22%2F%E6%8C%87%E9%92%88%2F</url>
-    <content type="text"><![CDATA[目录 概念 指针基础 指针常量及引用 指针与数组 指针与字符串 结构体指针 函数指针 读取 1.概念 如同变量储存值，指针对数据及函数的地址进行操作。 int x=10; int* ptr =&amp;x 简述内存与地址 内存：一组以二进制方式储存信息的单元，在空间中呈线性序列排序。 内存地址：用于访问（数据）基本信息单元的数字。 2.指针基础 指针同一般变量一样，既能储存值，也占据内存空间，作为特殊变量用于存储or访问内存地址。 &amp; 取址操作符 返回操作对象的内存地址 声明指针变量一般形式 ：数据类型* 变量名 例： int* x * 解引用操作符 使编译器识别它是一个指针变量，可以用来得到内存单元的值。 解引用指针变量前，指针变量必须指向一个有效地址。 例：int* x=10是错的。 10不在内存中 %p 打印地址 printf(&quot;%p&quot;,ptr);使用变量ptr打印x的地址 指针赋值 1.使用&amp; int x =10; int* ptr =&amp;x; or int* ptr ; ptr=&amp;x; 2.堆的动态分配 ​ int* ptr; ​ ptr=(int*)malloc(sizeof(int)); 3.指针常量及其引用 常量指针声明 指针类型* const 变量名 ​ int* const x; ``内存地址只能指向一个，且不能改变其值 。。。。。。。。。。。。困死了睡觉]]></content>
-  </entry>
-  <entry>
-    <title></title>
     <url>%2Fblog%2F2018%2F03%2F06%2F%E9%80%9A%E7%9F%A5%2F</url>
-    <content type="text"><![CDATA[鸽了 （课都上不起了更什么blog就这样，我去学习了，再见 更新日期待定。。。。。。。。。。。。。。。。。]]></content>
+    <content type="text"><![CDATA[鸽了 +（课都上不起了更什么blog就这样，我去学习了，再见 更新日期待定。。。。。。。。。。。。。。。。。]]></content>
   </entry>
   <entry>
     <title><![CDATA[validation failed迷]]></title>
@@ -34,7 +29,7 @@
   <entry>
     <title><![CDATA[菜鸡开始完善blog]]></title>
     <url>%2Fblog%2F2018%2F01%2F30%2F%E5%AE%8C%E5%96%84blog%E6%8C%81%E7%BB%AD%E8%BF%9B%E8%A1%8C%E4%B8%AD%2F</url>
-    <content type="text"><![CDATA[看完各位小姐姐的blog， 先鸽为敬]]></content>
+    <content type="text"><![CDATA[+看完各位小姐姐的blog， 先鸽为敬]]></content>
       <tags>
         <tag>随笔</tag>
       </tags>
