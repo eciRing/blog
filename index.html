@@ -61,7 +61,7 @@
 
 
 
-    <link rel="shortcut icon" href="/blog//source/favicon.png">
+    <link rel="shortcut icon" href="/blog//img/favicon.png">
 
 
 
@@ -187,7 +187,7 @@
 <div class="intrude-less">
     <header id="header" class="inner">
         <a href="/blog/" class="profilepic">
-            <img src="/blog//source/img/avatar.png" class="animated zoomIn">
+            <img src="/blog//img/avatar.png" class="animated zoomIn">
         </a>
         <hgroup>
           <h1 class="header-author"><a href="/blog/">eciRing</a></h1>
@@ -261,7 +261,7 @@
                         
                             <li><a href="/blog//blog/tags/">标签云</a></li>
                         
-                            <li><a href="/blog//blog/about/">关于我</a></li>
+                            <li><a href="/blog//blog/about">关于我</a></li>
                         
                         </ul>
                     </nav>
@@ -279,7 +279,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/nodejs/">nodejs</a></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/随笔/">随笔</a></li></ul>
+                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/nodejs/">nodejs</a></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/挖坑/">挖坑</a></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/随笔/">随笔</a></li></ul>
                     </div>
                 </section>
                 
@@ -323,7 +323,7 @@
     <div class="intrude-less">
         <header id="header" class="inner">
             <a href="/blog/" class="profilepic">
-                <img src="/blog//source/img/avatar.png" class="animated zoomIn">
+                <img src="/blog//img/avatar.png" class="animated zoomIn">
             </a>
             <hgroup>
               <h1 class="header-author"><a href="/blog/" title="回到主页">eciRing</a></h1>
@@ -340,7 +340,7 @@
                 
                     <li><a href="/blog/tags/">标签云</a></li>
                 
-                    <li><a href="/blog/about/">关于我</a></li>
+                    <li><a href="/blog/about">关于我</a></li>
                 
                 <div class="clearfix"></div>
                 </ul>
@@ -375,59 +375,22 @@
       <input type="hidden" class="isFancy" />
     
     
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/blog/2018/05/22/指针/">指针简结</a>
+    </h1>
+  
+
+      </header>
+      
+    
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>+<!------不。。。不能看的------></p>
-<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><ol>
-<li><p>概念</p>
-</li>
-<li><p>指针基础</p>
-</li>
-</ol>
-<ol>
-<li><p>指针常量及引用</p>
-</li>
-<li><p>指针与数组</p>
-</li>
-<li><p>指针与字符串</p>
-</li>
-<li><p>结构体指针</p>
-</li>
-<li><p>函数指针</p>
-</li>
-<li><p>读取</p>
-</li>
-</ol>
-<h1 id="1-概念"><a href="#1-概念" class="headerlink" title="1.概念"></a>1.概念</h1><p>   如同变量储存值，指针对数据及函数的地址进行操作。</p>
-<p>   <code>int x=10;</code>    <code>int* ptr =&amp;x</code></p>
-<p>   简述内存与地址</p>
-<p>   内存：一组以二进制方式储存信息的单元，在空间中呈线性序列排序。</p>
-<p>   内存地址：用于访问（数据）基本信息单元的数字。</p>
-<h2 id="2-指针基础"><a href="#2-指针基础" class="headerlink" title="2.指针基础"></a>2.指针基础</h2><p>   指针同一般变量一样，既能储存值，也占据内存空间，作为特殊变量用于存储or访问内存地址。</p>
-<p>   <code>&amp;</code> 取址操作符</p>
-<p>   返回操作对象的内存地址</p>
-<p>   声明指针变量一般形式 ：<code>数据类型*   变量名 例： int* x</code>   </p>
-<p>   <code>*</code> 解引用操作符</p>
-<p>   使编译器识别它是一个指针变量，可以用来得到内存单元的值。</p>
-<p>   解引用指针变量前，指针变量必须指向一个有效地址。</p>
-<p>   例：int* x=10是错的。 10不在内存中</p>
-<p>   <code>%p</code> 打印地址</p>
-<p>   <code>printf(&quot;%p&quot;,ptr);</code>使用变量ptr打印x的地址</p>
-<p>   指针赋值</p>
-<p>   1.使用&amp;</p>
-<p>   <code>int x =10;</code></p>
-<p>   <code>int* ptr =&amp;x;</code></p>
-<p>   <code>or  int* ptr ;</code></p>
-<p>   <code>ptr=&amp;x;</code></p>
-<p>   2.堆的动态分配</p>
-<p>   ​    <code>int* ptr;</code></p>
-<p>   ​    <code>ptr=(int*)malloc(sizeof(int));</code></p>
-<h3 id="3-指针常量及其引用"><a href="#3-指针常量及其引用" class="headerlink" title="3.指针常量及其引用"></a>3.指针常量及其引用</h3><p>   常量指针声明  <code>指针类型*  const  变量名</code></p>
-<p>   ​                       <code>int*  const x;</code></p>
-<p>``内存地址只能指向一个，且不能改变其值</p>
-<p>。。。。。。。。。。。。困死了睡觉</p>
-
+              <p> +
+          
       
     </div>
     
@@ -436,6 +399,14 @@
       
 
       
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/随笔/">随笔</a></li></ul>
+    </div>
+
+      
+        <p class="article-more-link">
+          <a href="/blog/2018/05/22/指针/#more">阅读全文 >></a>
+        </p>
       
       <div class="clearfix"></div>
     </div>
@@ -474,15 +445,22 @@
       <input type="hidden" class="isFancy" />
     
     
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/blog/2018/03/06/通知/">鸽了</a>
+    </h1>
+  
+
+      </header>
+      
+    
     <div class="article-entry" itemprop="articleBody">
       
           
-        <hr>
-<p>鸽了</p>
-<hr>
-<p>+<!-- 不。。。不能看的 --><br>（课都上不起了<br>更什么blog<br>就这样，我去学习了，再见</p>
-<p>更新日期待定。。。。。。。。。。。。。。。。。</p>
-
+              <p>+
+          
       
     </div>
     
@@ -491,6 +469,10 @@
       
 
       
+      
+        <p class="article-more-link">
+          <a href="/blog/2018/03/06/通知/#more">阅读全文 >></a>
+        </p>
       
       <div class="clearfix"></div>
     </div>
@@ -514,10 +496,10 @@
 
 
   
-    <article id="post-迷" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-live2d" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/blog/2018/03/03/迷/" class="article-date">
+      <a href="/blog/2018/03/03/live2d/" class="article-date">
       <time datetime="2018-03-03T13:13:28.009Z" itemprop="datePublished">2018-03-03</time>
 </a>
 
@@ -533,7 +515,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/blog/2018/03/03/迷/">validation failed迷</a>
+      <a class="article-title" href="/blog/2018/03/03/live2d/">live 2d</a>
     </h1>
   
 
@@ -543,13 +525,8 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>丈人阿母勿悲啼，</p>
-<p>此女不是凡夫妻。</p>
-<p>恐是天仙谪人世，</p>
-<p>只合人间十三岁。</p>
-<p>大都好物不坚牢，</p>
-<p>彩云易散琉璃脆。</p>
-
+              <p> +
+          
       
     </div>
     
@@ -558,6 +535,14 @@
       
 
       
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/挖坑/">挖坑</a></li></ul>
+    </div>
+
+      
+        <p class="article-more-link">
+          <a href="/blog/2018/03/03/live2d/#more">阅读全文 >></a>
+        </p>
       
       <div class="clearfix"></div>
     </div>
@@ -581,10 +566,10 @@
 
 
   
-    <article id="post-emmmmm" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-browser sync" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/blog/2018/03/03/emmmmm/" class="article-date">
+      <a href="/blog/2018/03/03/browser sync/" class="article-date">
       <time datetime="2018-03-03T13:13:02.991Z" itemprop="datePublished">2018-03-03</time>
 </a>
 
@@ -600,7 +585,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/blog/2018/03/03/emmmmm/">browser sync这么过分一定发blog</a>
+      <a class="article-title" href="/blog/2018/03/03/browser sync/">browser sync嘤嘤嘤</a>
     </h1>
   
 
@@ -610,7 +595,8 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <center>真*从安装到放弃<br><br>      <div align="center"><br> <img src="https://raw.githubusercontent.com/eciRing/blog/master/404/3.jpg" alt="void"><br></div><br></center><br>———<br><center>贴上报错<br><br>    <div align="center"><br> <img src="https://raw.githubusercontent.com/eciRing/blog/master/404/1.png" alt="rua~"><br></div><br>   (反正是不会再试了<br><br>   (反正不是环境变量的锅？<br><br>   (反正不是双文件夹的锅！<br>    <div align="center"><br> <img src="https://raw.githubusercontent.com/eciRing/blog/master/404/4.jpg" alt="哇"><br></div><br></center>
+              <p> +
+          
       
     </div>
     
@@ -628,6 +614,10 @@
     </div>
 
       
+        <p class="article-more-link">
+          <a href="/blog/2018/03/03/browser sync/#more">阅读全文 >></a>
+        </p>
+      
       <div class="clearfix"></div>
     </div>
     
@@ -650,10 +640,10 @@
 
 
   
-    <article id="post-看不透" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-mmd" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/blog/2018/03/03/看不透/" class="article-date">
+      <a href="/blog/2018/03/03/mmd/" class="article-date">
       <time datetime="2018-03-03T13:12:32.076Z" itemprop="datePublished">2018-03-03</time>
 </a>
 
@@ -669,7 +659,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/blog/2018/03/03/看不透/">看不透</a>
+      <a class="article-title" href="/blog/2018/03/03/mmd/">mmd</a>
     </h1>
   
 
@@ -679,12 +669,8 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>芙蓉花腮柳叶眼。</p>
-<p>十一把镜学点妆，</p>
-<p>十二抽针能绣裳。</p>
-<p>十三行坐事调品，</p>
-<p>不肯迷头白地藏。</p>
-
+              <p> +
+          
       
     </div>
     
@@ -693,6 +679,14 @@
       
 
       
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/挖坑/">挖坑</a></li></ul>
+    </div>
+
+      
+        <p class="article-more-link">
+          <a href="/blog/2018/03/03/mmd/#more">阅读全文 >></a>
+        </p>
       
       <div class="clearfix"></div>
     </div>
@@ -745,9 +739,8 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>+<!-- 不。。。不能看的 --><br>看完各位小姐姐的blog，</p>
-<p>先鸽为敬</p>
-
+              <p>+
+          
       
     </div>
     
@@ -760,6 +753,10 @@
         <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/随笔/">随笔</a></li></ul>
     </div>
 
+      
+        <p class="article-more-link">
+          <a href="/blog/2018/01/30/完善blog持续进行中/#more">阅读全文 >></a>
+        </p>
       
       <div class="clearfix"></div>
     </div>
@@ -898,7 +895,7 @@ MathJax.Hub.Queue(function() {
                 clearTimeout(titleTime);
             }
             else {
-                document.title = "ヾ(￣▽￣) 诶嘿嘿 被你发~ " + originTitle;
+                document.title = "ヾ(￣▽￣) 诶嘿嘿 ~ " + originTitle;
                 titleTime = setTimeout(function() {
                     document.title = originTitle;
                 }, 2000);
