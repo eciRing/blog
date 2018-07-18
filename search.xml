@@ -1,91 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search> 
-  
-    
-    <entry>
-      <title>指针简结</title>
-      <link href="/blog/2018/05/22/%E6%8C%87%E9%92%88/"/>
-      <content type="html"><![CDATA[<p> +<a id="more"></a></p><h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><ol><li><p>概念</p></li><li><p>指针基础</p></li></ol><ol><li><p>指针常量及引用</p></li><li><p>指针与数组</p></li><li><p>指针与字符串</p></li><li><p>结构体指针</p></li><li><p>函数指针</p></li><li><p>读取</p></li></ol><h1 id="1-概念"><a href="#1-概念" class="headerlink" title="1.概念"></a>1.概念</h1><p>   如同变量储存值，指针对数据及函数的地址进行操作。</p><p>   <code>int x=10;</code>    <code>int* ptr =&amp;x</code></p><p>   简述内存与地址</p><p>   内存：一组以二进制方式储存信息的单元，在空间中呈线性序列排序。</p><p>   内存地址：用于访问（数据）基本信息单元的数字。</p><h2 id="2-指针基础"><a href="#2-指针基础" class="headerlink" title="2.指针基础"></a>2.指针基础</h2><p>   指针同一般变量一样，既能储存值，也占据内存空间，作为特殊变量用于存储or访问内存地址。</p><p>   <code>&amp;</code> 取址操作符</p><p>   返回操作对象的内存地址</p><p>   声明指针变量一般形式 ：<code>数据类型*   变量名 例： int* x</code>   </p><p>   <code>*</code> 解引用操作符</p><p>   使编译器识别它是一个指针变量，可以用来得到内存单元的值。</p><p>   解引用指针变量前，指针变量必须指向一个有效地址。</p><p>   例：int* x=10是错的。 10不在内存中</p><p>   <code>%p</code> 打印地址</p><p>   <code>printf(&quot;%p&quot;,ptr);</code>使用变量ptr打印x的地址</p><p>   指针赋值</p><p>   1.使用&amp;</p><p>   <code>int x =10;</code></p><p>   <code>int* ptr =&amp;x;</code></p><p>   <code>or  int* ptr ;</code></p><p>   <code>ptr=&amp;x;</code></p><p>   2.堆的动态分配</p><p>   ​    <code>int* ptr;</code></p><p>   ​    <code>ptr=(int*)malloc(sizeof(int));</code></p><h3 id="3-指针常量及其引用"><a href="#3-指针常量及其引用" class="headerlink" title="3.指针常量及其引用"></a>3.指针常量及其引用</h3><p>   常量指针声明  <code>指针类型*  const  变量名</code></p><p>   ​                       <code>int*  const x;</code></p><p>``内存地址只能指向一个，且不能改变其值</p><p>。。。。。。。。。。。。困死了睡觉</p>]]></content>
-      
-      
-        <tags>
-            
-            <tag> 随笔 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    <entry>
-      <title>鸽了</title>
-      <link href="/blog/2018/03/06/%E9%80%9A%E7%9F%A5/"/>
-      <content type="html"><![CDATA[<p>+<a id="more"></a><br>（课都上不起了<br>更什么blog<br>就这样，我去学习了，再见</p><p>更新日期待定。。。。。。。。。。。。。。。。。</p>]]></content>
-      
-      
-    </entry>
-    
-    <entry>
-      <title>live 2d</title>
-      <link href="/blog/2018/03/03/live2d/"/>
-      <content type="html"><![CDATA[<p> +<a id="more"></a></p>]]></content>
-      
-      
-        <tags>
-            
-            <tag> 挖坑 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    <entry>
-      <title>browser sync嘤嘤嘤</title>
-      <link href="/blog/2018/03/03/browser%20sync/"/>
-      <content type="html"><![CDATA[<p> +<a id="more"></a></p><center>真*从安装到放弃<br><br>      <div align="center"><br> <img src="https://raw.githubusercontent.com/eciRing/blog/master/404/3.jpg" alt="void"><br></div><br></center><br>———<br><center>贴上报错<br><br>    <div align="center"><br> <img src="https://raw.githubusercontent.com/eciRing/blog/master/404/1.png" alt="rua~"><br></div><br>   (反正是不会再试了<br><br>   (反正不是环境变量的锅？<br><br>   (反正不是双文件夹的锅！<br>    <div align="center"><br> <img src="https://raw.githubusercontent.com/eciRing/blog/master/404/4.jpg" alt="哇"><br></div><br></center>]]></content>
-      
+<search>
+  <entry>
+    <title><![CDATA[指针简结]]></title>
+    <url>%2Fblog%2F2018%2F05%2F22%2F%E6%8C%87%E9%92%88%2F</url>
+    <content type="text"><![CDATA[+ 目录 概念 指针基础 指针常量及引用 指针与数组 指针与字符串 结构体指针 函数指针 读取 1.概念 如同变量储存值，指针对数据及函数的地址进行操作。 int x=10; int* ptr =&amp;x 简述内存与地址 内存：一组以二进制方式储存信息的单元，在空间中呈线性序列排序。 内存地址：用于访问（数据）基本信息单元的数字。 2.指针基础 指针同一般变量一样，既能储存值，也占据内存空间，作为特殊变量用于存储or访问内存地址。 &amp; 取址操作符 返回操作对象的内存地址 声明指针变量一般形式 ：数据类型* 变量名 例： int* x * 解引用操作符 使编译器识别它是一个指针变量，可以用来得到内存单元的值。 解引用指针变量前，指针变量必须指向一个有效地址。 例：int* x=10是错的。 10不在内存中 %p 打印地址 printf(&quot;%p&quot;,ptr);使用变量ptr打印x的地址 指针赋值 1.使用&amp; int x =10; int* ptr =&amp;x; or int* ptr ; ptr=&amp;x; 2.堆的动态分配 ​ int* ptr; ​ ptr=(int*)malloc(sizeof(int)); 3.指针常量及其引用 常量指针声明 指针类型* const 变量名 ​ int* const x; ``内存地址只能指向一个，且不能改变其值 。。。。。。。。。。。。困死了睡觉]]></content>
+      <tags>
+        <tag>随笔</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[鸽了]]></title>
+    <url>%2Fblog%2F2018%2F03%2F06%2F%E9%80%9A%E7%9F%A5%2F</url>
+    <content type="text"><![CDATA[+（课都上不起了更什么blog就这样，我去学习了，再见 更新日期待定。。。。。。。。。。。。。。。。。]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[live 2d]]></title>
+    <url>%2Fblog%2F2018%2F03%2F03%2Flive2d%2F</url>
+    <content type="text"><![CDATA[+]]></content>
+      <tags>
+        <tag>挖坑</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[browser sync嘤嘤嘤]]></title>
+    <url>%2Fblog%2F2018%2F03%2F03%2Fbrowser%20sync%2F</url>
+    <content type="text"><![CDATA[+ 真*从安装到放弃 ———贴上报错 (反正是不会再试了 (反正不是环境变量的锅？ (反正不是双文件夹的锅！]]></content>
       <categories>
-          
-          <category> 前端 </category>
-          
+        <category>前端</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> nodejs </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    <entry>
-      <title>mmd</title>
-      <link href="/blog/2018/03/03/mmd/"/>
-      <content type="html"><![CDATA[<p> +<a id="more"></a></p>]]></content>
-      
-      
-        <tags>
-            
-            <tag> 挖坑 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    <entry>
-      <title>菜鸡开始完善blog</title>
-      <link href="/blog/2018/01/30/%E5%AE%8C%E5%96%84blog%E6%8C%81%E7%BB%AD%E8%BF%9B%E8%A1%8C%E4%B8%AD/"/>
-      <content type="html"><![CDATA[<p>+<a id="more"></a><br>看完各位小姐姐的blog，</p><p>先鸽为敬</p>]]></content>
-      
-      
-        <tags>
-            
-            <tag> 随笔 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-  
-  
+      <tags>
+        <tag>nodejs</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[mmd]]></title>
+    <url>%2Fblog%2F2018%2F03%2F03%2Fmmd%2F</url>
+    <content type="text"><![CDATA[+]]></content>
+      <tags>
+        <tag>挖坑</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[菜鸡开始完善blog]]></title>
+    <url>%2Fblog%2F2018%2F01%2F30%2F%E5%AE%8C%E5%96%84blog%E6%8C%81%E7%BB%AD%E8%BF%9B%E8%A1%8C%E4%B8%AD%2F</url>
+    <content type="text"><![CDATA[+看完各位小姐姐的blog， 先鸽为敬]]></content>
+      <tags>
+        <tag>随笔</tag>
+      </tags>
+  </entry>
 </search>
